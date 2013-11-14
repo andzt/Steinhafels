@@ -1,6 +1,9 @@
 <?php
 $commands = array(
+	'echo $PWD',
+	'whoami',
 	'git pull',
+	'git status',
 );
 // Run the commands for output
 $output = '';
