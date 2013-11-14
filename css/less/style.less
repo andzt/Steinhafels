@@ -3,6 +3,11 @@ body {
   height: 100%;
 }
 
+body {
+  font-size: 13px;
+  line-height: 1;
+}
+
 #wrap {
   min-height: 100%;
   height: auto;
@@ -143,4 +148,14 @@ body {
 
 .navbar .navbar-link:hover {
   color: #333333;
+}
+
+.nav-tabs {
+  > li {
+    > a {
+      @media (min-width: 1200px) {
+        padding: 10px 26px;
+      }
+    }
+  }
 }
