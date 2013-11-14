@@ -1,6 +1,7 @@
 <?php
 $commands = array(
 	'git pull',
+	'git status',
 );
 // Run the commands for output
 $output = '';
