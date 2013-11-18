@@ -55,15 +55,8 @@
 .navbar {
   margin-bottom: 0;
   border: none;
-  .navbar-brand {
-    color: #777777;
-    &:hover, &:focus {
-      color: #5e5e5e;
-      background-color: transparent;
-    }
-  }
   .navbar-text {
-    color: #777777;
+    color: #161616;
   }
   .navbar-nav {
     > li {
@@ -78,6 +71,15 @@
         @media (min-width: 768px) {
           padding-top: 0;
           padding-bottom: 0;
+        }
+      }
+    }
+    > .open {
+      > a {
+        &:hover,
+        &:focus {
+          color: #fff;
+          background-color: @HighlightRed;
         }
       }
     }
@@ -97,18 +99,6 @@
   .navbar-collapse, .navbar-form {
     border-color: #e7e7e7;
   }
-}
-/* everything below needs to be organized */
-.navbar .navbar-nav > .dropdown > a:hover .caret,
-.navbar .navbar-nav > .dropdown > a:focus .caret {
-  border-top-color: #333333;
-  border-bottom-color: #333333;
-}
-.navbar .navbar-nav > .open > a,
-.navbar .navbar-nav > .open > a:hover,
-.navbar .navbar-nav > .open > a:focus {
-  color: #555555;
-  background-color: #e7e7e7;
 }
 .navbar .navbar-nav > .open > a .caret,
 .navbar .navbar-nav > .open > a:hover .caret,
