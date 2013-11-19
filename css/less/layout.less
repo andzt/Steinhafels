@@ -34,7 +34,7 @@
       right: 15px;
       font-size: 11px;
       color: #fff;
-      background: #a00003;
+      background: @SteinRed;
       b {
         font-family: @ArialBlack;
         font-weight: normal;
@@ -50,7 +50,7 @@
 }
 
 /* ------------------------------
-   UTILITY NAV
+   UTILITY NAVIGATION
    ------------------------------ */
 .navbar {
   margin-bottom: 0;
@@ -96,8 +96,8 @@
     > .dropdown {
       > a {
         .caret {
-          border-top-color: #800002;
-          border-bottom-color: #800002;
+          border-top-color: @GenericRed;
+          border-bottom-color: @GenericRed;
         }
       }
     }
@@ -155,7 +155,7 @@
       color: #161616;
       border: none;
       border-radius: 0;
-      border-bottom: 1px solid #a00003;
+      border-bottom: 1px solid @SteinRed;
       @media (min-width: 1200px) {
         padding: 10px 24.9px;
       }
@@ -163,6 +163,15 @@
         color: #fff;
         border: none;
         background-color: #ba3c43;
+        border-bottom: 1px solid @SteinRed;
+      }
+    }
+    &.nav-find-store {
+      a {
+        color: @GenericRed;
+        &:hover {
+          color: #fff;
+        }
       }
     }
   }
