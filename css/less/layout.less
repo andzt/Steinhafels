@@ -100,7 +100,7 @@
             &:hover,
             &:focus {
               color: @ContentGrey;
-              background-color: @AccentGrey;
+              background-color: @AccentLight;
             }
           }
         }
@@ -132,23 +132,27 @@
       }
     }
     @media (max-width: 767px) {
-      .navbar .navbar-nav .open .dropdown-menu > li > a {
+      > li > a {
+        padding: 5px 0;
+        border-right: none;
+      }
+      .open .dropdown-menu > li > a {
         color: #777777;
       }
-      .navbar .navbar-nav .open .dropdown-menu > li > a:hover,
-      .navbar .navbar-nav .open .dropdown-menu > li > a:focus {
+      .open .dropdown-menu > li > a:hover,
+      .open .dropdown-menu > li > a:focus {
         color: #333333;
         background-color: transparent;
       }
-      .navbar .navbar-nav .open .dropdown-menu > .active > a,
-      .navbar .navbar-nav .open .dropdown-menu > .active > a:hover,
-      .navbar .navbar-nav .open .dropdown-menu > .active > a:focus {
+      .open .dropdown-menu > .active > a,
+      .open .dropdown-menu > .active > a:hover,
+      .open .dropdown-menu > .active > a:focus {
         color: #555555;
         background-color: #e7e7e7;
       }
-      .navbar .navbar-nav .open .dropdown-menu > .disabled > a,
-      .navbar .navbar-nav .open .dropdown-menu > .disabled > a:hover,
-      .navbar .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+      .open .dropdown-menu > .disabled > a,
+      .open .dropdown-menu > .disabled > a:hover,
+      .open .dropdown-menu > .disabled > a:focus {
         color: #cccccc;
         background-color: transparent;
       }
