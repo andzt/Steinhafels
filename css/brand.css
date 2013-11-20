@@ -1,3 +1,7 @@
+body {
+  color: #262626;
+}
+
 h1 { 
   margin: 20px 0 0;
   padding: 0 20px 10px;
@@ -44,7 +48,7 @@ p {
 
 #color-palettes .sample {
   padding: 10px 0 65px 10px;
-  font-size: 11px;
+  font-size: 13px;
   font-weight: bold;
   color: #fff;
   width: 175px;
@@ -66,14 +70,34 @@ p {
   background: #161616;
 }
 
-#color-palettes .stein-red .sample {
-  background: #a00003;
+#color-palettes .dark-grey .sample {
+  background: #545454;
 }
 
-#color-palettes .stein-red .sample {
-  background: #a00003;
+#color-palettes .medium-grey .sample {
+  background: #b0b0b0;
 }
 
-#color-palettes .stein-red .sample {
-  background: #a00003;
+#color-palettes .light-grey .sample {
+  color: rgba(0,0,0,.5);
+  background: #dadada;
+}
+
+#color-palettes .accent-grey .sample {
+  color: rgba(0,0,0,.5);
+  background: #e5e5e5;
+}
+
+#color-palettes .accent-light .sample {
+  color: rgba(0,0,0,.5);
+  background: #f0f0f0;
+}
+
+#color-palettes .accent-orange .sample {
+  background: #ffaa29;
+}
+
+#color-palettes .accent-yellow .sample {
+  color: rgba(0,0,0,.5);
+  background: #fff387;
 }
