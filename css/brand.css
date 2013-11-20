@@ -11,6 +11,7 @@ h1 {
 h2 {
   padding: 50px 20px 0;
   clear: both;
+  font-size: 21px;
   color: #b0b0b0;
   text-transform: uppercase;
 }
@@ -22,7 +23,7 @@ p {
 #guide-logo > div {
   margin: 20px;
   float: left;
-  width: 300px;
+  width: 200px;
 }
 
 #guide-logo .logo-white .logo {
@@ -35,7 +36,7 @@ p {
 }
 
 #guide-logo .logo img {
-  max-width: 300px;
+  max-width: 200px;
 }
 
 #color-palettes h2 {
@@ -44,10 +45,13 @@ p {
 
 #color-palettes .color-palette {
   margin: 0 20px;
+  overflow: hidden;
 }
 
 #color-palettes .sample {
-  padding: 10px 0 65px 10px;
+  margin: 0 20px 0 0;
+  padding: 10px 0 55px 10px;
+  float: left;
   font-size: 13px;
   font-weight: bold;
   color: #fff;
@@ -100,4 +104,20 @@ p {
 #color-palettes .accent-yellow .sample {
   color: rgba(0,0,0,.5);
   background: #fff387;
+}
+
+#color-palettes .palette-info {
+  float: left;
+  max-width: 400px;
+}
+
+#color-palettes .palette-info h3 {
+  margin-top: 9px;
+  margin-bottom: 5px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+#color-palettes .palette-info p {
+  margin: 0;
 }
