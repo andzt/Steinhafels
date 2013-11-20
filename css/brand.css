@@ -1,10 +1,22 @@
-h1 {
-  padding: 0 20px 40px;
+h1 { 
+  margin: 20px 0 50px;
+  padding: 0 20px 10px;
+  border-bottom: 1px solid #b0b0b0;
+}
+
+h2 {
+  padding: 0 20px;
+  color: #b0b0b0;
+}
+
+p {
+  line-height: 1.5;
 }
 
 #guide-logo > div {
   margin: 20px;
   float: left;
+  width: 300px;
 }
 
 #guide-logo .logo-white .logo {
