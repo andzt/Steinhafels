@@ -1,0 +1,21 @@
+h1 {
+  padding: 0 20px 40px;
+}
+
+#guide-logo > div {
+  margin: 20px;
+  float: left;
+}
+
+#guide-logo .logo-white .logo {
+  background: #000;
+}
+
+#guide-logo a {
+  margin: 20px 0 0;
+  display: block;
+}
+
+.logo img {
+  max-width: 300px;
+}
