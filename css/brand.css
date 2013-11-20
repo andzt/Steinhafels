@@ -1,12 +1,14 @@
 h1 { 
-  margin: 20px 0 50px;
+  margin: 20px 0 0;
   padding: 0 20px 10px;
   border-bottom: 1px solid #b0b0b0;
 }
 
 h2 {
-  padding: 0 20px;
+  padding: 50px 20px 0;
+  clear: both;
   color: #b0b0b0;
+  text-transform: uppercase;
 }
 
 p {
@@ -28,6 +30,50 @@ p {
   display: block;
 }
 
-.logo img {
+#guide-logo .logo img {
   max-width: 300px;
+}
+
+#color-palettes h2 {
+  margin-bottom: 30px;
+}
+
+#color-palettes .color-palette {
+  margin: 0 20px;
+}
+
+#color-palettes .sample {
+  padding: 10px 0 65px 10px;
+  font-size: 11px;
+  font-weight: bold;
+  color: #fff;
+  width: 175px;
+}
+
+#color-palettes .stein-red .sample {
+  background: #a00003;
+}
+
+#color-palettes .generic-red .sample {
+  background: #800002;
+}
+
+#color-palettes .highlight-red .sample {
+  background: #ba3c43;
+}
+
+#color-palettes .content-grey .sample {
+  background: #161616;
+}
+
+#color-palettes .stein-red .sample {
+  background: #a00003;
+}
+
+#color-palettes .stein-red .sample {
+  background: #a00003;
+}
+
+#color-palettes .stein-red .sample {
+  background: #a00003;
 }
