@@ -214,5 +214,40 @@ p {
 }
 
 #marketing-examples .marketing-example-graphic {
-  
+  padding: 25px 25px 25px 550px;
+  position: relative;
+  overflow: hidden;
+  font-size: 21px;
+  width: auto;
+}
+
+#marketing-examples .marketing-example-graphic.vertical {
+  padding: 115px 25px 90px 285px;
+  height: 366px;
+  width: 580px;
+}
+
+#marketing-examples .marketing-example-graphic img {
+  position: absolute;
+  top: -19px;
+  left: 0;
+  width: 525px;
+}
+
+#marketing-examples .marketing-example-graphic.vertical img {
+  top: 30px;
+  left: -305px;
+  width: auto;
+}
+
+#marketing-examples .marketing-example-graphic b {
+  font-size: 27px;
+}
+
+#marketing-examples .marketing-example-graphic.vertical b {
+  font-size: 31px;
+}
+
+#marketing-examples .marketing-example-graphic .marketing-example-details {
+  font-size: 27px;
 }
