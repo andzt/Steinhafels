@@ -4,12 +4,12 @@ body {
 
 h1 { 
   margin: 20px 0 0;
-  padding: 0 20px 10px;
+  padding: 0 0 10px;
   border-bottom: 1px solid #b0b0b0;
 }
 
 h2 {
-  padding: 50px 20px 0;
+  padding: 50px 0 0;
   clear: both;
   font-size: 21px;
   color: #b0b0b0;
@@ -20,9 +20,14 @@ p {
   line-height: 1.5;
 }
 
+.container {
+  width: 990px !important;
+}
+
 #guide-logo > div {
-  margin: 20px;
-  float: left;
+  margin: 20px 37px 0 0;
+  display: inline-block;
+  vertical-align: top;
   width: 200px;
 }
 
@@ -44,7 +49,6 @@ p {
 }
 
 #color-palettes .color-palette {
-  margin: 0 20px;
   overflow: hidden;
 }
 
@@ -111,30 +115,6 @@ p {
   max-width: 600px;
 }
 
-@media (max-width: 992px) {
-  #color-palettes .palette-info {
-    max-width: 400px;
-  }
-}
-
-@media (max-width: 715px) {
-  #color-palettes .palette-info {
-    max-width: 300px;
-  }
-}
-
-@media (max-width: 714px) {
-  #color-palettes .sample {
-    float: none;
-  }
-  #color-palettes .palette-info {
-    margin: 0 0 20px;
-    float: none;
-    clear: both;
-    max-width: 100%;
-  }
-}
-
 #color-palettes .palette-info h3 {
   margin-top: 9px;
   margin-bottom: 5px;
@@ -146,12 +126,9 @@ p {
   margin: 0;
 }
 
-#marketing-examples h2 {
-  margin-bottom: 30px;
-}
-
 #marketing-examples .marketing-example {
-  margin: 0 20px;
+  margin: 30px 0;
+  cursor: pointer;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 27px;
   color: #fff;
@@ -207,6 +184,35 @@ p {
   height: 59px;
 }
 
-#marketing-examples .marketing-example-1 {
-  width: 955px;
+#marketing-examples .marketing-example-2 {
+  padding: 25px;
+  width: 505px;
+}
+
+#marketing-examples .marketing-example-2 .marketing-example-content {
+  display: block;
+}
+
+#marketing-examples .marketing-example-2 b {
+  margin: 0 0 10px;
+  display: block;
+}
+
+#marketing-examples .marketing-example-2 .marketing-example-details {
+  margin: 15px 0 0;
+  padding: 5px 30px;
+  float: none;
+  height: 40px;
+}
+
+#marketing-examples .marketing-example-2 .marketing-example-details i {
+  padding: 0 15px 0 0;
+}
+
+#marketing-examples .marketing-example-2 .marketing-example-details i:after {
+  top: 10px;
+}
+
+#marketing-examples .marketing-example-graphic {
+  
 }
