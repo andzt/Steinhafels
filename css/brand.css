@@ -222,9 +222,9 @@ p {
 }
 
 #marketing-examples .marketing-example-graphic.vertical {
-  padding: 115px 25px 90px 285px;
-  height: 366px;
-  width: 580px;
+  padding: 40px 25px 90px 285px;
+  height: 355px;
+  width: 485px;
 }
 
 #marketing-examples .marketing-example-graphic img {
@@ -235,7 +235,7 @@ p {
 }
 
 #marketing-examples .marketing-example-graphic.vertical img {
-  top: 30px;
+  top: 20px;
   left: -305px;
   width: auto;
 }
@@ -245,9 +245,44 @@ p {
 }
 
 #marketing-examples .marketing-example-graphic.vertical b {
+  margin: 0 0 15px;
   font-size: 31px;
 }
 
 #marketing-examples .marketing-example-graphic .marketing-example-details {
   font-size: 27px;
+}
+
+#marketing-examples .marketing-example-graphic.vertical .marketing-example-details {
+  margin: 25px 0 0;
+  padding: 5px 25px;
+  background: #06a000;
+}
+
+#marketing-examples .marketing-example-graphic.vertical .marketing-example-details i:after {
+  border-left: 11px solid #fff;
+}
+
+#marketing-examples .snowflake {
+  position: absolute;
+  right: 0;
+  opacity: .5;
+}
+
+#marketing-examples .snowflake-1 {
+  bottom: 13px;
+  right: 98px;
+  font-size: 3em;
+}
+
+#marketing-examples .snowflake-2 {
+  bottom: 69px;
+  right: 60px;
+  font-size: 1.5em;
+}
+
+#marketing-examples .snowflake-3 {
+  bottom: -54px;
+  right: -22px;
+  font-size: 7em;
 }
