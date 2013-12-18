@@ -64,7 +64,7 @@
       > a {
         font-size: 11px;
         color: @ContentGrey;
-        border-right: 1px solid @LightGrey;
+        border-left: 1px solid @LightGrey;
         &:hover, &:focus {
           color: @ContentGrey;
           background-color: transparent;
@@ -74,9 +74,9 @@
           padding-bottom: 0;
         }
       }
-      &:last-child {
+      &:first-child {
         > a {
-          border-right: none;
+          border-left: none;
         }
       }
       .dropdown-menu {
@@ -110,6 +110,25 @@
       }
       &.nav-cart {
         display: none;
+        .dropdown-menu {
+          padding: 15px;
+          ul {
+            padding: 0;
+            list-style: none;
+            a {
+              padding: 20px 0;
+            }
+          }
+        }
+        &.open {
+          > a {
+            color: #fff;
+            background-color: @HighlightRed;
+          }
+          .dropdown-menu {
+            display: block;
+          }
+        }
       }
     }
     > .open {
