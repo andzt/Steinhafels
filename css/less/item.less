@@ -1,4 +1,5 @@
-article#item {
+#item {
+  padding: 20px 0 0;
   &:after {
      content: " ";
      display: block;
@@ -7,6 +8,20 @@ article#item {
   }
   #item-gallery {
     float: left;
-    width: 530px;
+    width: 560px;
+    .item-image-container {
+      padding: 0 30px 25px 0;
+      text-align: center;
+      border-right: 1px solid #dadada;
+      border-bottom: 1px solid #dadada;
+    }
+    .item-image-thumbnails {
+      padding: 25px 30px 25px;
+      border-right: 1px solid #dadada;
+    }
+  }
+  #item-right {
+    float: right;
+    width: 400px;
   }
 }
