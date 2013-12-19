@@ -121,19 +121,24 @@
               clear: both;
               a {
                 padding: 20px 0;
-              }
-              img {
-                float: left;
-                max-width: 48px;
-              }
-              p {
-                &.cart-item-name {
-                  float: left;
-                }
-                &.cart-item-price {
-                  float: right;
+                overflow: hidden;
+                display: block;
+                &.added-item {
+                  background: #ecffe6;
                 }
               }
+            }
+          }
+          img {
+            float: left;
+            max-width: 48px;
+          }
+          p {
+            &.cart-item-name {
+              float: left;
+            }
+            &.cart-item-price {
+              float: right;
             }
           }
         }
