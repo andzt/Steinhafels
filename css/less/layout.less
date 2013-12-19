@@ -121,17 +121,17 @@
               clear: both;
               a {
                 padding: 20px 0;
-                img {
+              }
+              img {
+                float: left;
+                max-width: 48px;
+              }
+              p {
+                &.cart-item-name {
                   float: left;
-                  max-width: 48px;
                 }
-                p {
-                  &.cart-item-name {
-                    float: left;
-                  }
-                  &.cart-item-price {
-                    float: right;
-                  }
+                &.cart-item-price {
+                  float: right;
                 }
               }
             }
