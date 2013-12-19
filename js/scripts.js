@@ -12,7 +12,7 @@ $(document).ready(function() {
   });
   $('.nav-cart').mouseenter(function() {
     $('.nav-cart').addClass('open');
-    $('.nav-cart .dropdown-menu h2').text('My Cart');
+    $('.nav-cart .dropdown-menu h3').text('My Cart');
     $('.nav-cart .dropdown-menu li:first-child').show();
     $('.nav-cart .cart-more-items').hide();
     $('.nav-cart .cart-total').show();
