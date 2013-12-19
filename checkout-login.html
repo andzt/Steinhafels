@@ -36,7 +36,7 @@
               </li>
               <li><a href="#">Track Order</a></li>
               <li><a href="#">Contact Us</a></li>
-              <li class="nav-cart-empty"><a href="#">Cart</a></li>
+              <li class="nav-cart-empty"><a href="#">Cart (2)</a></li>
               <li class="nav-cart">
                 <a href="#">Cart (2)</a>
                 <div class="dropdown-menu">
@@ -96,6 +96,36 @@
       <section id="content">
         <section id="checkout">
           <h3 class="section-title">Shopping Cart</h3>
+          <div class="checkout-login-guest">
+            <section class="checkout-option">
+              <h2>Checkout as guest</h2>
+              <p>Continue to checkout as a guest.</p>
+              <p>You can create a Steinhafels account later.</p>
+              <a href="#">Continue as a guest</a>
+            </section>
+            <section class="checkout-option">
+              <h2>Checkout with your account</h2>
+              <form class="form-inline" role="form">
+                <div class="form-group">
+                  <label class="sr-only" for="exampleInputEmail2">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address">
+                </div>
+                <div class="form-group">
+                  <label class="sr-only" for="exampleInputPassword2">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+                </div>
+                <button type="submit" class="btn btn-primary">Sign in</button>
+              </form>
+              <form class="form-inline" role="form">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox"> Remember me
+                  </label>
+                </div>
+              </form>
+            </section>
+          </div>
+          <div class="cart-right-summary"></div>
         </section>
       </section>
     </div>
