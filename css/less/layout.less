@@ -116,18 +116,22 @@
           ul {
             padding: 0;
             list-style: none;
-            a {
-              padding: 20px 0;
-              img {
-                float: left;
-                max-width: 48px;
-              }
-              p {
-                &.cart-item-name {
+            li {
+              overflow: hidden;
+              clear: both;
+              a {
+                padding: 20px 0;
+                img {
                   float: left;
+                  max-width: 48px;
                 }
-                &.cart-item-price {
-                  float: right;
+                p {
+                  &.cart-item-name {
+                    float: left;
+                  }
+                  &.cart-item-price {
+                    float: right;
+                  }
                 }
               }
             }
