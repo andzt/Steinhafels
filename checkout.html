@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/pickmeup.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -104,10 +105,50 @@
                   <p class="checkout-edit">Edit</p>
                 </div>
                 <div class="checkout-steps-content">
-                  
+                  <form class="form-inline" role="form">
+                    <div class="form-group">
+                      <label class="sr-only" for="input-first-name">First name</label>
+                      <input type="text" class="form-control" id="input-first-name" placeholder="First name">
+                    </div>
+                    <div class="form-group">
+                      <label class="sr-only" for="input-last-name">Last name</label>
+                      <input type="text" class="form-control" id="input-last-name" placeholder="Last name">
+                    </div>
+                    <div class="form-group">
+                      <label class="sr-only" for="input-address">Address</label>
+                      <input type="text" class="form-control" id="input-address" placeholder="Address">
+                    </div>
+                    <div class="form-group">
+                      <label class="sr-only" for="input-address-2">Address 2</label>
+                      <input type="text" class="form-control" id="input-address-2" placeholder="Address 2">
+                    </div>
+                    <div class="form-group">
+                      <label class="sr-only" for="input-city">City</label>
+                      <input type="text" class="form-control" id="input-city" placeholder="City">
+                    </div>
+                    <div class="form-group">
+                      <label class="sr-only" for="input-state">State</label>
+                      <input type="text" class="form-control" id="input-state" placeholder="State">
+                    </div>
+                    <div class="form-group">
+                      <label class="sr-only" for="input-zip">Zip</label>
+                      <input type="text" class="form-control" id="input-zip" placeholder="Zip">
+                    </div>
+                    <div class="form-group">
+                      <label class="sr-only" for="input-zip">Zip</label>
+                      <input type="text" class="form-control" id="input-zip" placeholder="Zip">
+                    </div>
+                    <div class="form-group">
+                      <label class="sr-only" for="input-phone">Phone</label>
+                      <input type="tel" class="form-control" id="input-phone" placeholder="Phone">
+                    </div>
+                  </form>
                 </div>
                 <div class="checkout-steps-summary">
-                  asdf
+                  <p>Johnny Quest</p>
+                  <p>123 Steinhafel Lane Apt 214</p>
+                  <p>Milwaukee, WI 12345</p>
+                  <p>123-456-7890</p>
                 </div>
               </li>
               <li class="schedule-delivery">
@@ -116,7 +157,7 @@
                   <p class="checkout-edit">Edit</p>
                 </div>
                 <div class="checkout-steps-content">
-                  
+                  <div class="calendar"></div>
                 </div>
                 <div class="checkout-steps-summary">
                   asdf
@@ -244,6 +285,7 @@
     </footer>
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.pickmeup.min.js"></script>
     <script src="js/scripts-ck.js"></script>
   </body>
 </html>

@@ -22,4 +22,7 @@ $(document).ready(function() {
   $('.nav-cart').mouseleave(function() {
     $('.nav-cart').removeClass('open');
   });
+	$('.calendar').pickmeup({
+		flat	: true
+	});
 });
