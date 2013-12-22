@@ -59,4 +59,10 @@ $(document).ready(function() {
   $('.pmu-button').click(function() {
     $('.date-selected').show();
   });
+  $('.payment-information .checkbox input').click(function() {
+    if(!$(this).is(':checked'))
+      $('.billing-address-form').show();
+    else
+      $('.billing-address-form').hide();
+  });
 });
