@@ -13,12 +13,37 @@
     padding: 0 30px 0 0;
     display: table-cell;
     width: auto;
+    ol {
+      margin: 0;
+      padding: 0;
+      .checkout-steps-header {
+        background: @AccentLight;
+        &:after { 
+           content: " ";
+           display: block;
+           height: 0; 
+           clear: both;
+        }
+        h3 {
+          float: left;
+        }
+        .checkout-edit {
+          float: right;
+        }
+      }
+      .checkout-steps-content {
+        
+      }
+      .checkout-steps-summary {
+        display: none;
+      }
+    }
   }
   .checkout-right {
     display: table-cell;
     width: 400px;
     #cart-summary {
-      background: #f0f0f0;
+      background: @AccentLight;
     }
   }
 }
