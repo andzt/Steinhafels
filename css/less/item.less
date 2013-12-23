@@ -46,15 +46,39 @@
       width: 330px;
     }
     .item-price-details {
+      margin: 12px 0 0;
       tr {
+        &:last-child {
+          td {
+            padding: 15px 0 0;
+          }
+        }
         td {
           padding: 3px 0;
           &:first-child {
             width: 92px;
           }
+          &:last-child {
+            color: #a00003;
+          }
           &.sale-price,
           &.sale-price-value {
             font-size: 17px;
+          }
+          &.sale-price-value {
+            font-weight: bold;
+          }
+          &.list-price,
+          &.list-price-value {
+            color: #545454;
+            text-decoration: line-through;
+          }
+          &.available-status-value {
+            font-weight: bold;
+            color: #545454;
+            &.in-stock {
+              color: #06a000;
+            }
           }
         }
       }
