@@ -117,14 +117,37 @@
   background-clip: @argument;
 }
 
-/* standard button */
-.standard-button {
-  padding: 15px 10px;
+/* global button */
+.global-button {
+  padding: 14px 12px;
   font-size: 13px;
   font-weight: bold;
 }
 
-/* primary button */
+/* standard button */
+.standard-button {
+  color: white;
+  background: @GenericRed;
+  border: 1px solid @GenericRed;
+  &:hover {
+    background: @HighlightRed;
+  }
+}
 
+/* primary button */
+.primary-button {
+  color: white;
+  background: @SteinRed;
+  border: 1px solid @SteinRed;
+  &:hover {
+    background: @HighlightRed;
+    border: 1px solid @HighlightRed;
+  }
+}
 
 /* secondary button */
+.secondary-button {
+  color: white;
+  background: @ContentGrey;
+  border: 1px solid @ContentGrey;
+}

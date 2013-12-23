@@ -85,10 +85,35 @@
     }
     .item-cart-buttons {
       margin: 20px 0 0;
-    }
-    .item-cart-buttons-added {
-      margin: 20px 0 0;
-      display: none;
+      position: relative;
+      button {
+        width: 185px;
+        &#add-to-cart {
+          margin: 0 10px 0 0;
+          float: left;
+        }
+        &#viewable-at {
+          float: right;
+          text-align: left;
+          .caret {
+            margin: 6px 0 0;
+            float: right;
+            border-top-color: @SteinRed;
+          }
+        }
+      }
+      .dropdown-menu {
+        right: 0;
+      }
+      &.item-cart-buttons-added {
+        display: none;
+      }
+      &:after { 
+         content: " ";
+         display: block;
+         height: 0; 
+         clear: both;
+      }
     }
     .item-description {
       margin: 20px 0 0;
