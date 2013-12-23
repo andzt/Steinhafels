@@ -9,6 +9,9 @@
   #item-gallery {
     float: left;
     width: 730px;
+    @media (max-width: 1200px) {
+      width: 580px;
+    }
     .item-image-container {
       padding: 0 30px 25px 0;
       text-align: center;
@@ -16,6 +19,9 @@
       border-bottom: 1px solid @LightGrey;
       img {
         max-width: 700px;
+        @media (max-width: 1200px) {
+          max-width: 550px;
+        }
       }
     }
     .item-image-thumbnails {
@@ -36,6 +42,9 @@
   #item-right {
     float: right;
     width: 400px;
+    @media (max-width: 1200px) {
+      width: 350px;
+    }
     .item-cart-buttons-added {
       display: none;
     }
