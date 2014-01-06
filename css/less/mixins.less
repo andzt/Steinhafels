@@ -119,23 +119,25 @@
 
 /* global button */
 .global-button {
-  padding: 14px 12px;
   font-size: 13px;
   font-weight: bold;
 }
 
 /* standard button */
 .standard-button {
-  color: white;
+  padding: 10px 16px;
+  color: white !important;
   background: @GenericRed;
   border: 1px solid @GenericRed;
   &:hover {
     background: @HighlightRed;
+    border: 1px solid @HighlightRed;
   }
 }
 
 /* primary button */
 .primary-button {
+  padding: 14px 16px;
   color: white !important;
   background: @SteinRed;
   border: 1px solid @SteinRed;
@@ -147,7 +149,7 @@
 
 /* secondary button */
 .secondary-button {
-  color: white;
+  color: white !important;
   background: @ContentGrey;
   border: 1px solid @ContentGrey;
 }
