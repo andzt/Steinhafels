@@ -13,6 +13,22 @@
     padding: 0 30px 0 0;
     display: table-cell;
     width: auto;
+    .checkout-option {
+      p {
+        float: left;
+        width: 300px;
+      }
+      .btn {
+        float: right;
+        width: 225px;
+      }
+      &:after { 
+         content: " ";
+         display: block;
+         height: 0; 
+         clear: both;
+      }
+    }
     ol {
       margin: 0;
       padding: 0;
