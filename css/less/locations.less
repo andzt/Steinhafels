@@ -14,7 +14,16 @@
     vertical-align: top;
     width: auto;
     .locations-single {
+      padding: 20px 0;
       border-bottom: 1px solid @LightGrey;
+      h3 {
+        a {
+          color: @ContentGrey;
+        }
+      }
+      &:first-of-type {
+        padding: 0 0 20px;
+      }
       &:last-of-type {
         border-bottom: none;
       }
