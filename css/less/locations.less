@@ -1,3 +1,29 @@
 #locations {
   padding: 20px 0 0;
+  display: table;
+  width: 100%;
+  &:after { 
+     content: " ";
+     display: block;
+     height: 0; 
+     clear: both;
+  }
+  .locations-listing {
+    padding: 0 30px 0 0;
+    display: table-cell;
+    vertical-align: top;
+    width: auto;
+  }
+  .locations-right {
+    display: table-cell;
+    vertical-align: top;
+    width: 400px;
+    section {
+      padding: 25px;
+      background: @AccentLight;
+      h3 {
+        font-weight: normal;
+      }
+    }
+  }
 }
