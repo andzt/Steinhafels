@@ -95,6 +95,7 @@
           }
         }
         .checkout-steps-content {
+          margin: 10px 0 0;
           display: none;
           #input-first-name {
             margin: 0 6px 10px 0;
@@ -127,13 +128,75 @@
           #input-phone {
             width: 348px;
           }
+          .calendar {
+            float: left;
+            .pickmeup {
+              .rounded(0);
+              background: white;
+              .pmu-instance {
+                padding: 0;
+                height: 171px;
+                width: 184px;
+                nav {
+                  background: @DarkGrey;
+                }
+                .pmu-day-of-week {
+                  border-left: 1px solid #b0b0b0;
+                  border-right: 1px solid #b0b0b0;
+                  background: @AccentLight;
+                  div {
+                    border-left: 1px solid @LightGrey;
+                    border-bottom: 1px solid @LightGrey;
+                  }
+                }
+                .pmu-days {
+                  border-left: 1px solid #b0b0b0;
+                  border-right: 1px solid #b0b0b0;
+                  border-bottom: 1px solid #b0b0b0;
+                  .pmu-button {
+                    border-left: 1px solid @LightGrey;
+                    border-bottom: 1px solid @LightGrey;
+                  }
+                }
+              }
+            }
+          }
           .date-selected {
+            margin: 0 0 0 50px;
+            padding: 25px;
+            float: left;
+            position: relative;
             display: none;
+            width: 200px;
+            border: 1px solid #b0b0b0;
+            &:before {
+              position: absolute;
+              left: -30px;
+              top: 50%;
+              content: "\00BB";
+              font-size: 21px;
+            }
+          }
+          .btn {
+            margin: 20px 0 0;
+            clear: both;
+            float: right;
+            width: 225px;
+          }
+          &:after { 
+             content: " ";
+             display: block;
+             height: 0; 
+             clear: both;
           }
         }
         .checkout-steps-summary {
+          padding: 15px 12px;
           display: none;
           background: #fafafa;
+          p {
+            margin: 0;
+          }
         }
         .billing-address-form {
           display: none;
