@@ -136,16 +136,38 @@
               background: white;
               .pmu-instance {
                 padding: 0;
-                height: 171px;
-                width: 184px;
+                height: 293px;
+                width: 282px;
                 nav {
+                  line-height: 2.5em;
                   background: @DarkGrey;
+                  .pmu-month {
+                    margin: 0 auto;
+                    font-size: 15px;
+                    font-weight: bold;
+                  }
+                  .pmu-prev,
+                  .pmu-next {
+                    font-size: 11px;
+                    height: auto;
+                    width: auto;
+                  }
+                  .pmu-prev {
+                    margin: 0 0 0 12px;
+                  }
+                  .pmu-next {
+                    margin: 0 12px 0 0;
+                  }
                 }
                 .pmu-day-of-week {
                   border-left: 1px solid #b0b0b0;
                   border-right: 1px solid #b0b0b0;
                   background: @AccentLight;
                   div {
+                    width: 40px;
+                    font-size: 11px;
+                    font-weight: bold;
+                    color: @DarkGrey;
                     border-left: 1px solid @LightGrey;
                     border-bottom: 1px solid @LightGrey;
                   }
@@ -154,6 +176,11 @@
                   border-left: 1px solid #b0b0b0;
                   border-right: 1px solid #b0b0b0;
                   border-bottom: 1px solid #b0b0b0;
+                  div {
+                    font-size: 15px;
+                    height: 40px;
+                    width: 40px;
+                  }
                   .pmu-button {
                     border-left: 1px solid @LightGrey;
                     border-bottom: 1px solid @LightGrey;
