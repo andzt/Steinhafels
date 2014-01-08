@@ -239,19 +239,22 @@
 .nav-tabs {
   margin: 0 15px;
   position: relative;
+  text-align: center;
   border-bottom: none;
   > li {
+    display: inline-block;
     position: static;
+    float: none;
     > a {
       margin: 0;
-      padding: 10px 14.6px;
+      padding: 10px 13.9px;
       font-weight: bold;
       color: @ContentGrey;
       border: none;
       .rounded(0);
       border-bottom: 1px solid @SteinRed;
       @media (min-width: 1200px) {
-        padding: 10px 24.6px;
+        padding: 10px 23.9px;
       }
       &:hover {
         color: white;
