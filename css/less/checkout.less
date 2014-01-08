@@ -184,6 +184,9 @@
                     color: @ContentGrey;
                     height: 40px;
                     width: 40px;
+                    &:hover {
+                      background: @AccentLight;
+                    }
                   }
                   .pmu-button {
                     border-left: 1px solid @LightGrey;
@@ -192,10 +195,28 @@
                   .pmu-not-in-month {
                     color: @LightGrey;
                   }
+                  .pmu-today {
+                    color: white;
+                    background: @ContentGrey !important;
+                    &:hover {
+                      background: @ContentGrey;
+                    }
+                  }
                   .pmu-selected {
                     color: white;
                     background: @GenericRed;
                     .inner-shadow(0, 0, 5px, 0.5);
+                    &:hover {
+                      background: @GenericRed;
+                    }
+                  }
+                  .pmu-unavailable {
+                    color: @DarkGrey;
+                    cursor: default;
+                    background: @LightGrey;
+                    &:hover {
+                      background: @LightGrey;
+                    }
                   }
                 }
               }
