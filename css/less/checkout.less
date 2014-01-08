@@ -168,8 +168,26 @@
             float: left;
             position: relative;
             display: none;
-            width: 200px;
+            width: 250px;
             border: 1px solid #b0b0b0;
+            .date-selected-confirm {
+              font-size: 15px;
+              font-weight: bold;
+            }
+            ul {
+              padding: 0;
+              list-style: none;
+              li {
+                margin: 15px 0 0;
+                padding: 0 0 0 10px;
+                position: relative;
+                &:before {
+                  position: absolute;
+                  left: 0;
+                  content: "-";
+                }
+              }
+            }
             &:before {
               position: absolute;
               left: -30px;
