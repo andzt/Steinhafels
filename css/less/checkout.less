@@ -167,6 +167,7 @@
                     width: 40px;
                     font-size: 11px;
                     font-weight: bold;
+                    line-height: 2.2em;
                     color: @DarkGrey;
                     border-left: 1px solid @LightGrey;
                     border-bottom: 1px solid @LightGrey;
@@ -178,12 +179,23 @@
                   border-bottom: 1px solid #b0b0b0;
                   div {
                     font-size: 15px;
+                    font-weight: bold;
+                    line-height: 2.8em;
+                    color: @ContentGrey;
                     height: 40px;
                     width: 40px;
                   }
                   .pmu-button {
                     border-left: 1px solid @LightGrey;
                     border-bottom: 1px solid @LightGrey;
+                  }
+                  .pmu-not-in-month {
+                    color: @LightGrey;
+                  }
+                  .pmu-selected {
+                    color: white;
+                    background: @GenericRed;
+                    .inner-shadow(0, 0, 5px, 0.5);
                   }
                 }
               }
@@ -200,6 +212,7 @@
             width: 352px;
             border: 1px solid #b0b0b0;
             .date-selected-confirm {
+              margin: 0 0 20px;
               font-weight: bold;
             }
             ul {
