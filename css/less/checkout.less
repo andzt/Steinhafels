@@ -231,6 +231,49 @@
       h3 {
         font-weight: normal;
       }
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+          padding: 5px 0;
+          overflow: hidden;
+          clear: both;
+          &:first-of-type {
+            padding: 18px 0 5px;
+            border-top: 1px solid @LightGrey;
+          }
+          &.cart-subtotal {
+            margin: 13px 0 0;
+            padding: 18px 0 5px;
+            border-top: 1px solid @LightGrey;
+          }
+          &.cart-total {
+            margin: 13px 0 0;
+            padding: 18px 0 0;
+            border-top: 1px solid @LightGrey;
+            .cart-item-price {
+              font-size: 17px;
+              font-weight: bold;
+              color: #06a000;
+            }
+          }
+        }
+      }
+      p {
+        margin: 0;
+        &.cart-item-name {
+          float: left;
+          font-size: 15px;
+          font-weight: bold;
+        }
+        &.cart-label {
+          float: left;
+        }
+        &.cart-item-price {
+          float: right;
+        }
+      }
     }
   }
 }
