@@ -15,11 +15,42 @@
     width: auto;
     .locations-single {
       padding: 20px 0;
+      clear: both;
       border-bottom: 1px solid @LightGrey;
+      .location-info {
+        float: left;
+      }
+      .store-hours {
+        float: right;
+        width: 210px;
+        td {
+          padding: 3px 0;
+        }
+      }
       h3 {
+        margin: 0;
         a {
           color: @ContentGrey;
         }
+      }
+      .location-type {
+        margin: 3px 0 0;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: @MediumGrey;
+      }
+      .location-address {
+        margin: 10px 0 0;
+      }
+      .location-phone {
+        margin: 10px 0 0;
+        font-weight: bold;
+      }
+      &:after { 
+         content: " ";
+         display: block;
+         height: 0; 
+         clear: both;
       }
       &:first-of-type {
         padding: 0 0 20px;
