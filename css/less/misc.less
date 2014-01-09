@@ -1,0 +1,100 @@
+/* styles for validation helpers */
+.field-validation-error {
+    color: #b94a48;
+}
+
+.field-validation-valid {
+    display: none;
+ }
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+/* styles for removing the background from form */
+.no-color {
+  background-color: white;
+  border-style:none;
+}
+
+a:hover{
+    text-decoration:none;
+    cursor: pointer;
+}
+
+.spinner {
+  display: inline-block;
+  opacity: 0;
+  width: 0;
+
+  -webkit-transition: opacity 0.25s, width 0.25s;
+  -moz-transition: opacity 0.25s, width 0.25s;
+  -o-transition: opacity 0.25s, width 0.25s;
+  transition: opacity 0.25s, width 0.25s;
+}
+
+.has-spinner.active {
+  cursor:progress;
+}
+
+.has-spinner.active .spinner {
+  opacity: 1;
+  width: auto; /* This doesn't work, just fix for unkown width elements */
+}
+
+.has-spinner-mini.active .spinner {
+    width: 10px;
+}
+
+.has-spinner-small.active .spinner {
+  opacity: 1;
+    width: 13px;
+}
+
+.has-spinner.btn.active .spinner {
+    width: 16px;
+}
+
+.has-spinner.btn-large.active .spinner {
+    width: 19px;
+}
+
+.cart-product-image{
+    width: 150px;
+}
+
+.cartHeader {
+    display: inline;
+}
+
+.qtyText {
+    font-weight: normal;
+    font-size: 10px;
+    position: absolute;
+    float: left;
+    padding: 10px 0 0 2px;
+}
+
+.line-thru-prc {
+    text-decoration: line-through;
+    color: #666666;
+    font-size: 11px;
+}
+
+.reqfield {
+    color: red;
+    font-size: 10px;
+    font-weight: bold;
+}
