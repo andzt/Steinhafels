@@ -366,6 +366,12 @@
     }
     tr {
       border-top: 1px solid @LightGrey;
+      th {
+        padding: 35px 0 15px;
+      }
+      td {
+        padding: 20px 0;
+      }
       &:first-of-type,
       &.cart-shipping {
         border-top: none;
@@ -373,11 +379,10 @@
           padding: 0 0 20px;
         }
       }
-      th {
-        padding: 0 0 15px;
-      }
-      td {
-        padding: 20px 0;
+      &.cart-total {
+        td {
+          padding: 20px 0 35px;
+        }
       }
     }
   }
