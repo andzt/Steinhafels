@@ -364,5 +364,21 @@
     .cart-buttons {
       float: right;
     }
+    tr {
+      border-top: 1px solid @LightGrey;
+      &:first-of-type,
+      &.cart-shipping {
+        border-top: none;
+        td {
+          padding: 0 0 20px;
+        }
+      }
+      th {
+        padding: 0 0 15px;
+      }
+      td {
+        padding: 20px 0;
+      }
+    }
   }
 }
