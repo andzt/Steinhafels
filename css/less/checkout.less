@@ -338,7 +338,7 @@
             .cart-item-price {
               font-size: 17px;
               font-weight: bold;
-              color: #06a000;
+              color: @Green;
             }
           }
         }
@@ -363,23 +363,42 @@
   .shopping-cart {
     .cart-buttons {
       float: right;
+      &:first-of-type {
+        margin: 0 0 10px;
+      }
+      &:last-of-type {
+        margin: 10px 0 0;
+      }
+    }
+    .form-inline {
+      float: left;
+      button {
+        vertical-align: bottom;
+      }
+      &:last-of-type {
+        margin: 0 0 0 75px;
+      }
     }
     tr {
       border-top: 1px solid @LightGrey;
       h3 {
-        margin: 0;
+        margin: 0 0 5px;
+        font-size: 21px;
+        line-height: 25px;
       }
       p {
-        margin: 0;
+        margin: 2px 0 0;
       }
       th {
-        padding: 35px 0 15px;
+        padding: 40px 0 15px;
         font-weight: normal;
       }
       td {
         padding: 20px 0;
+        vertical-align: top;
         &.cart-item-info {
           .cart-item-image {
+            margin: 0 20px 0 0;
             padding: 10px;
             float: left;
             text-align: center;
@@ -393,27 +412,26 @@
         &.cart-quantity {
           input {
             margin: 0 10px 0 0;
-            padding: 10px;
+            padding: 8px;
             float: left;
-            height: 35px;
-            width: 32px;
+            height: 31px;
+            width: 29px;
             font-weight: normal;
             color: @DarkGrey;
           }
           p {
-            margin: 9px 0 0;
+            margin: 0;
             cursor: pointer;
             font-weight: bold;
+            line-height: 32px;
             color: @GenericRed;
           }
         }
-        &.cart-quantity,
-        &.cart-label {
-          width: 140px;
-        }
-        &.cart-price {
-          text-align: right;
-          width: 140px;
+      }
+      &.cart-item {
+        .cart-price {
+          font-weight: bold;
+          line-height: 32px;
         }
       }
       &:first-of-type,
@@ -423,9 +441,22 @@
           padding: 0 0 20px;
         }
       }
+      .cart-quantity,
+      .cart-label {
+        width: 140px;
+      }
+      .cart-price {
+        text-align: right;
+        width: 140px;
+      }
       &.cart-total {
         td {
-          padding: 20px 0 35px;
+          padding: 20px 0 40px;
+          font-size: 17px;
+          font-weight: bold;
+          &.cart-price {
+            color: @Green;
+          }
         }
       }
     }

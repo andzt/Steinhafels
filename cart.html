@@ -418,7 +418,7 @@
               <tr class="cart-item">
                 <td class="cart-item-info">
                   <div class="cart-item-image">
-                    <img alt="Parker Leather Sofa" class="item-image" src="img/item-image.jpg">
+                    <img src="img/item-image.jpg" alt="Parker Leather Sofa" class="item-image">
                   </div>
                   <div class="cart-item-details">
                     <h3>item title</h3>
@@ -427,14 +427,14 @@
                   </div>
                 </td>
                 <td class="cart-quantity">
-                  <input /><p>Remove</p>
+                  <input name="quantity" type="text" value="1"><p>Remove</p>
                 </td>
                 <td class="cart-price">$1,234.94</td>
               </tr>
               <tr class="cart-item">
                 <td class="cart-item-info">
                   <div class="cart-item-image">
-                    <img alt="Parker Leather Sofa" class="item-image" src="img/item-image.jpg">
+                    <img src="img/item-image.jpg" alt="Parker Leather Sofa" class="item-image">
                   </div>
                   <div class="cart-item-details">
                     <h3>item title</h3>
@@ -443,7 +443,7 @@
                   </div>
                 </td>
                 <td class="cart-quantity">
-                  <input /><p>Remove</p>
+                  <input name="quantity" type="text" value="1"><p>Remove</p>
                 </td>
                 <td class="cart-price">$1,234.94</td>
               </tr>
@@ -464,6 +464,20 @@
                 <td class="cart-price">$1,234.94</td>
               </tr>
             </table>
+            <form class="form-inline" role="form">
+              <div class="form-group">
+                <label for="enter-code">Gift card or coupons:</label>
+                <input type="text" class="form-control" id="enter-code" placeholder="Enter code">
+              </div>
+              <button type="submit" class="btn btn-default btn-secondary">Apply</button>
+            </form>
+            <form class="form-inline" role="form">
+              <div class="form-group">
+                <label for="calc-shipping">Calculate shipping:</label>
+                <input type="text" class="form-control" id="calc-shipping" placeholder="Zipcode">
+              </div>
+              <button type="submit" class="btn btn-default">Calculate</button>
+            </form>
             <div  class="cart-buttons">
               <button class="btn btn-standard btn-default btn-secondary" type="button">Continue shopping</button>
               <button class="btn btn-standard btn-primary" type="button">Checkout</button>
