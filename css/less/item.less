@@ -12,6 +12,9 @@
     @media (max-width: 1200px) {
       width: 580px;
     }
+    @media (max-width: 1000px) {
+      width: 360px;
+    }
     .item-image-container {
       padding: 0 30px 25px 0;
       text-align: center;
@@ -21,6 +24,9 @@
         max-width: 700px;
         @media (max-width: 1200px) {
           max-width: 550px;
+        }
+        @media (max-width: 1000px) {
+          max-width: 330px;
         }
       }
     }
@@ -35,7 +41,17 @@
         li {
           margin: 0 12px;
           display: inline-block;
+          @media (max-width: 1000px) {
+            margin: 0 11px;
+          }
+          img {
+            @media (max-width: 1000px) {
+              height: 36px;
+              width: 48px;
+            }
+          }
         }
+
       }
     }
   }
