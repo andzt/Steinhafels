@@ -134,9 +134,13 @@
           float: none;
           width: 100%;
         }
-        &#add-to-cart {
+        &#add-to-cart,
+        &#continue-shopping {
           margin: 0 10px 0 0;
           float: left;
+          @media (max-width: 768px) {
+            margin: 0 0 10px;
+          }
         }
         &#viewable-at {
           float: right;
@@ -145,9 +149,6 @@
             margin: 6px 0 0;
             float: right;
             border-top-color: @SteinRed;
-          }
-          @media (max-width: 768px) {
-            margin: 10px 0 0;
           }
         }
       }
