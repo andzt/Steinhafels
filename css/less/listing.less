@@ -1,5 +1,4 @@
 .product-listing {
-  margin-top: 5px;
   .list-group {
     a.list-group-item {
       padding: 10px 0;
@@ -8,6 +7,29 @@
       border-top: 1px solid @LightGrey;
       border-right: none;
       border-bottom: 1px solid @LightGrey;
+    }
+  }
+  .listing-header {
+    .listing-results {
+      span {
+        display: block;
+        text-align: right;
+      }
+    }
+  }
+  .listing-item-row {
+    margin-top: 35px;
+    .item {
+      position: relative;
+      .item-image {
+        max-height: 200px;
+        img {
+          margin: 0 auto;
+          display: block;
+          height: 200px;
+          width: auto;
+        }
+      }
     }
   }
 }
