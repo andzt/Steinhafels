@@ -11,21 +11,41 @@
   }
   .listing-header {
     line-height: 18px;
+    height: 48px;
     .listing-results-count {
       float: right;
     }
   }
   .listing-item-row {
-    margin-top: 35px;
+    > div {
+      padding-bottom: 40px;
+    }
     .item {
       position: relative;
       .item-image {
-        max-height: 200px;
+        margin: 0 0 15px;
         img {
           margin: 0 auto;
           display: block;
           height: auto;
-          width: 200px;
+          width: 100%;
+        }
+      }
+      h3 {
+        margin: 0 0 10px;
+        font-size: 13px;
+      }
+      .listing-price {
+        margin: 0;
+        font-size: 17px;
+        font-weight: bold;
+        color: @SteinRed;
+        span {
+          margin: 0 0 0 5px;
+          font-size: 13px;
+          font-weight: normal;
+          color: @DarkGrey;
+          text-decoration: line-through;
         }
       }
     }
