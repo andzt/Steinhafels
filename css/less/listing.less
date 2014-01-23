@@ -1,24 +1,31 @@
 .product-listing {
   .list-group {
+    font-size: 11px;
+    h4 {
+      line-height: 18px;
+    }
     a.list-group-item {
       padding: 10px 0;
       color: @DarkGrey;
-      border-left: none;
-      border-top: 1px solid @LightGrey;
-      border-right: none;
-      border-bottom: 1px solid @LightGrey;
+      border: none;
+      @media (max-width: 991px) {
+        border-top: 1px solid @LightGrey;
+        border-bottom: 1px solid @LightGrey;
+      }
     }
   }
   .listing-header {
+      margin-bottom: 30px;
+      padding-bottom: 15px;
     line-height: 18px;
-    height: 48px;
+      border-bottom: 1px solid @LightGrey;
     .listing-results-count {
       float: right;
     }
   }
   .listing-item-row {
     > div {
-      padding-bottom: 40px;
+      padding-bottom: 50px;
     }
     .item {
       position: relative;
