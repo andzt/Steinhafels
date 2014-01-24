@@ -1,6 +1,11 @@
 // ONLY FOR PROTOTYPING PURPOSES //
 
 $(document).ready(function() {
+  // listing nav interaction
+  $('.list-feature .list-group-item').click(function() {
+    $(this).find('.list-group-check').toggleClass('checked');
+    return false;
+  });
   // add-to-cart interaction
   $('.item-cart-buttons .btn-primary').click(function() {
     $('.nav-cart-empty').hide();
