@@ -5,7 +5,7 @@
       margin: 0 0 8px;
       line-height: 18px;
     }
-    a.list-group-item {
+    .list-group-item {
       padding: 8px 0;
       clear: both;
       line-height: 15px;
@@ -17,6 +17,9 @@
       }
       span {
         float: left;
+      }
+      &.selected {
+        color: @SteinRed;
       }
       .list-group-check {
         margin: 0 6px 0 0;
@@ -38,6 +41,13 @@
             content: "\e013";
             color: @SteinRed;
           }
+        }
+      }
+    }
+    &.list-feature {
+      .list-group-item {
+        &.selected {
+          color: @DarkGrey;
         }
       }
     }

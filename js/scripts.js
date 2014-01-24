@@ -6,6 +6,11 @@ $(document).ready(function() {
     $(this).find('.list-group-check').toggleClass('checked');
     return false;
   });
+  $('.list-group .list-group-item').click(function() {
+    $(this).parent('.list-group').find('.list-group-item').removeClass('selected');
+    $(this).addClass('selected');
+    return false;
+  });
   // add-to-cart interaction
   $('.item-cart-buttons .btn-primary').click(function() {
     $('.nav-cart-empty').hide();
@@ -33,7 +38,7 @@ $(document).ready(function() {
   });
   // render checkout delivery calendar
   $('.calendar').pickmeup({
-    flat  : true
+    flat : true
   });
   // checkout steps interaction
   $('.shipping-information .btn').click(function() {
