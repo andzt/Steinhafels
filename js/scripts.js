@@ -7,8 +7,12 @@ $(document).ready(function() {
     return false;
   });
   $('.list-group .list-group-item').click(function() {
-    $(this).parent('.list-group').find('.list-group-item').removeClass('selected');
-    $(this).addClass('selected');
+    if ($(this).hasClass('selected')) {
+      $(this).removeClass('selected');
+    } else {
+      $(this).parent('.list-group').find('.list-group-item').removeClass('selected');
+      $(this).addClass('selected');
+    };
     return false;
   });
   // add-to-cart interaction
