@@ -14,8 +14,8 @@ $(document).ready(function() {
     };
   });
   $('.list-toggle a').click(function() {
-    $(this).parent('.list-toggle').toggleClass('collapsed');
-    $('.list-secondary').toggleClass('collapsed');
+    $(this).parent('.list-toggle').toggleClass('collapsed expanded');
+    $('.list-secondary').toggleClass('collapsed expanded');
   });
   // add-to-cart interaction
   $('.item-cart-buttons .btn-primary').click(function() {

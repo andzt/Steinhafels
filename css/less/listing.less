@@ -57,13 +57,29 @@
     &.list-toggle {
       a {
         display: inline-block;
+        position: relative;
         font-weight: bold;
         &:hover,
         &:focus {
           background-color: transparent;
         }
+        .fewer {
+          display: inline-block;
+        }
+        &.more {
+          display: none;
+        }
+        @media (max-width: 991px) {
+          border: none;
+        }
       }
       &.collapsed {
+        .fewer {
+          display: none;
+        }
+        .more {
+          display: inline-block;
+        }
         .caret {
           border-top: 4px solid transparent;
           border-bottom: 4px solid transparent;
