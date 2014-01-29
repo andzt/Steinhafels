@@ -3,6 +3,14 @@
   height: auto;
   margin: 0 auto -240px;
   padding: 0 0 240px;
+  @media (max-width: 1000px) {
+    margin: 0 auto -420px;
+    padding: 0 0 420px;
+  }
+  @media (max-width: 590px) {
+    margin: 0 auto -585px;
+    padding: 0 0 585px;
+  }
 }
 
 /* ==============================
@@ -10,7 +18,7 @@
    ============================== */
 .page-header {
   margin: 0;
-  padding: 40px 0 15px;
+  padding: 50px 0 20px;
   position: relative;
   border-bottom: none;
   h1 {
@@ -253,7 +261,7 @@
       color: @ContentGrey;
       border: none;
       .rounded(0);
-      border-bottom: 1px solid @SteinRed;
+      border-bottom: 2px solid @SteinRed;
       @media (min-width: 1200px) {
         padding: 10px 26.6px;
       }
@@ -264,7 +272,7 @@
         color: white;
         border: none;
         background-color: @HighlightRed;
-        border-bottom: 1px solid @SteinRed;
+        border-bottom: 2px solid @SteinRed;
       }
     }
     &.nav-find-store {
@@ -331,13 +339,31 @@ section#content {
   height: 240px;
   color: white;
   background-color: @ContentGrey;
-  .row {
-    @media (max-width: 1000px) {
+  .footer-marketing {
+    margin: 10px 0 0;
+    float: right;
+    height: 150px;
+    width: 375px;
+    background: @DarkGrey;
+    @media (max-width: 768px) {
       margin: 0;
+      float: none;
+      width: 275px;
     }
-    .col-md-2 {
+  }
+  .footer-column-wrapper {
+    float: left;
+    .footer-column {
+      margin: 0 75px 0 0;
+      display: inline-block;
+      @media (max-width: 1200px) {
+        margin: 0 35px 0 0;
+      }
       @media (max-width: 1000px) {
-        display: none;
+        margin: 0 60px 0 0;
+      }
+      @media (max-width: 768px) {
+        margin: 20px 35px 0 0;
       }
       h6 {
         font-size: 13px;
@@ -354,17 +380,29 @@ section#content {
             color: white;
           }
         }
+        @media (max-width: 768px) {
+          margin: 0;
+        }
+      }
+      &:last-of-type {
+        margin: 0;
+        @media (max-width: 768px) {
+          margin: 20px 35px 0 0;
+        }
       }
     }
-    .footer-marketing {
-      margin: 10px 0 0;
-      float: right;
-      height: 150px;
-      width: 375px;
-      background: @DarkGrey;
-      @media (max-width: 1200px) {
-        width: 300px;
-      }
+    @media (max-width: 1000px) {
+      width: 325px;
     }
+    @media (max-width: 768px) {
+      float: none;
+      width: auto;
+    }
+  }
+  @media (max-width: 1000px) {
+    height: 420px;
+  }
+  @media (max-width: 590px) {
+    height: 585px;
   }
 }
