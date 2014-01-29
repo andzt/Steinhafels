@@ -2,18 +2,20 @@
 
 $(document).ready(function() {
   // listing nav interaction
-  $('.list-feature .list-group-item').click(function() {
-    $(this).find('.list-group-check').toggleClass('checked');
-    return false;
-  });
   $('.list-group .list-group-item').click(function() {
+    $(this).find('.list-group-check').toggleClass('checked');
+  });
+  $('.list-category .list-group-item').click(function() {
     if ($(this).hasClass('selected')) {
       $(this).removeClass('selected');
     } else {
-      $(this).parent('.list-group').find('.list-group-item').removeClass('selected');
+      $(this).parent('.list-category').find('.list-group-item').removeClass('selected');
       $(this).addClass('selected');
     };
-    return false;
+  });
+  $('.list-toggle a').click(function() {
+    $(this).parent('.list-toggle').toggleClass('collapsed');
+    $('.list-secondary').toggleClass('collapsed');
   });
   // add-to-cart interaction
   $('.item-cart-buttons .btn-primary').click(function() {
