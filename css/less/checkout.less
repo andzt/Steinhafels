@@ -1,4 +1,5 @@
 .checkout {
+  margin-top: 15px;
   /* login/guest page and checkout accordion steps */
   .checkout-option {
     h3 {
@@ -11,10 +12,9 @@
     }
     .btn {
       float: right;
-      width: 225px;
+      width: 179px;
       @media (max-width: 1200px) {
-        margin: 10px 0 0;
-        float: none;
+        width: 170px;
       }
     }
     .checkbox {
@@ -22,6 +22,9 @@
     }
     .form-control {
       width: 230px;
+      @media (max-width: 1200px) {
+        width: 176px;
+      }
     }
     &:after { 
        content: " ";
@@ -432,6 +435,13 @@
 }
 /* shopping cart */
 .shopping-cart {
+  margin-top: 15px;
+  &:after { 
+     content: " ";
+     display: block;
+     height: 0; 
+     clear: both;
+  }
   h2 {
     margin: 3px 0 0;
     float: left;
