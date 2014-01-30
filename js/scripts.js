@@ -19,8 +19,6 @@ $(document).ready(function() {
   });
   // add-to-cart interaction
   $('.item-cart-buttons .btn-primary').click(function() {
-    $('.nav-cart-empty').hide();
-    $('.nav-cart').show();
     $('.nav-cart').addClass('open');
     $('.nav-cart .dropdown-menu li:first-child').hide();
     $('.nav-cart .cart-total').hide();
