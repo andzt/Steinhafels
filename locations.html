@@ -414,9 +414,24 @@
         <option value="Clearance">Clearance</option>
       </select>
       <section id="content">
-        <div id="locations">
-          <h2 class="section-title">Store Locations</h2>
-          <div class="locations-listing">
+        <ol class="breadcrumb">
+          <li><a href="#">Home</a></li>
+          <li class="active">Locations</li>
+        </ol>
+        <div class="row section-title">
+          <div class="col-lg-12">
+            <h2>Store Locations</h2>
+          </div>
+        </div>
+        <div class="row locations">
+          <div class="col-md-5 col-md-push-7">
+            <section class="locations-map">
+              map
+            </section>
+            <section class="locations-more-info">
+            </section>
+          </div>
+          <div class="col-md-7 col-md-pull-5">
             <div class="locations-single">
               <div class="location-info">
                 <h3><a href="#">Bayshore</a></h3>
@@ -492,13 +507,6 @@
                 </tr>
               </table>
             </div>
-          </div>
-          <div class="locations-right">
-            <section class="locations-map">
-              map
-            </section>
-            <section class="locations-more-info">
-            </section>
           </div>
         </div>
       </section>

@@ -109,7 +109,7 @@ label {
 
 .breadcrumb {
   margin: 0;
-  padding: 18px 0 35px;
+  padding: 18px 0 0;
   background-color: transparent;
   .rounded(0);
   .active {
@@ -117,14 +117,15 @@ label {
   }
 }
 
-h2 {
-  &.section-title {
-    display: table-row;
+.section-title {
+  h2 {
+    margin: 30px 0 15px;
+    padding: 0 0 15px;
     font-family: @Georgia;
     font-size: 17px;
     font-weight: normal;
     text-transform: uppercase;
-    height: 40px;
+    border-bottom: 1px solid @LightGrey;
   }
 }
 
