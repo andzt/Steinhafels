@@ -29,14 +29,6 @@
           <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
               <li><a href="#">My Account</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tools <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Room Planner</a></li>
-                  <li><a href="#">Design Service</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Track Order</a></li>
               <li><a href="#">Contact Us</a></li>
               <li class="nav-cart">
                 <a href="cart.html">Cart (2)</a>
@@ -455,7 +447,7 @@
                     <p class="checkout-edit">Edit</p>
                   </div>
                   <div class="checkout-steps-content">
-                    <form class="form-inline" role="form">
+                    <div class="form-inline" role="form">
                       <div class="form-group">
                         <label class="sr-only" for="input-first-name">First name</label>
                         <input type="text" class="form-control form-control-lg" id="input-first-name" placeholder="First name">
@@ -488,7 +480,7 @@
                         <label class="sr-only" for="input-phone">Phone</label>
                         <input type="tel" class="form-control form-control-lg" id="input-phone" placeholder="Phone">
                       </div>
-                    </form>
+                    </div>
                     <button class="btn btn-standard btn-lg" type="button">Continue</button>
                   </div>
                   <div class="checkout-steps-summary">
@@ -524,7 +516,7 @@
                     <p class="checkout-edit">Edit</p>
                   </div>
                   <div class="checkout-steps-content">
-                    <form class="form-inline" role="form">
+                    <div class="form-inline" role="form">
                       <div class="form-group">
                         <label class="sr-only" for="input-card-number">Card number</label>
                         <input type="text" class="form-control form-control-lg" id="input-card-number" placeholder="Card number">
@@ -545,15 +537,15 @@
                         <label class="sr-only" for="input-email">Email</label>
                         <input type="tel" class="form-control form-control-lg" id="input-email" placeholder="Email">
                       </div>
-                    </form>
-                    <form class="form-inline" role="form">
+                    </div>
+                    <div class="form-inline" role="form">
                       <div class="checkbox">
                         <label>
                           <input type="checkbox" checked> Billing and shipping address are the same
                         </label>
                       </div>
-                    </form>
-                    <form class="form-inline billing-address-form" role="form">
+                    </div>
+                    <div class="form-inline billing-address-form" role="form">
                       <div class="form-group">
                         <label class="sr-only" for="input-first-name">First name</label>
                         <input type="text" class="form-control form-control-lg" id="input-first-name" placeholder="First name">
@@ -582,7 +574,7 @@
                         <label class="sr-only" for="input-state">State</label>
                         <input type="text" class="form-control form-control-lg" id="input-state" placeholder="State">
                       </div>
-                    </form>
+                    </div>
                     <p>By placing this order, I agree to the <a href="#">terms of service</a>.</p>
                     <a href="checkout-confirm.html"><button class="btn btn-standard btn-lg" type="button">Place order</button></a>
                   </div>

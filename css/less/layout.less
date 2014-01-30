@@ -232,8 +232,12 @@
     @media (min-width: 768px) {
       margin: 20px 5px 0 0;
     }
-    @media (min-width: 1200px) {
-      .form-control {
+    .form-control {
+      width: 475px;
+      @media (max-width: 1200px) {
+        width: 375px;
+      }
+      @media (max-width: 1000px) {
         width: 275px;
       }
     }
