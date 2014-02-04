@@ -249,85 +249,85 @@
    ============================== */
 .nav-tabs-wrapper {
   text-align: center;
-}
-.nav-tabs {
-  margin: 0 15px;
-  position: relative;
-  border-bottom: none;
-  @media (max-width: 768px) {
-    display: none;
-  }
-  > li {
-    position: static;
-    display: inline-block;
-    float: none;
-    > a {
-      margin: 0;
-      padding: 10px 16px;
-      font-weight: bold;
-      color: @ContentGrey;
-      border: none;
-      .rounded(0);
-      border-bottom: 2px solid @SteinRed;
-      @media (min-width: 1200px) {
-        padding: 10px 26px;
+  .nav-tabs {
+    margin: 0 15px;
+    position: relative;
+    border-bottom: none;
+    @media (max-width: 768px) {
+      display: none;
+    }
+    > li {
+      position: static;
+      display: inline-block;
+      float: none;
+      > a {
+        margin: 0;
+        padding: 10px 16px;
+        font-weight: bold;
+        color: @ContentGrey;
+        border: none;
+        .rounded(0);
+        border-bottom: 2px solid @SteinRed;
+        @media (min-width: 1200px) {
+          padding: 10px 26px;
+        }
+        @media (max-width: 1000px) {
+          padding: 10px 36px;
+        }
+        &:hover {
+          color: white;
+          border: none;
+          background-color: @HighlightRed;
+          border-bottom: 2px solid @SteinRed;
+        }
       }
-      @media (max-width: 1000px) {
-        padding: 10px 36px;
+      &.nav-find-store {
+        a {
+          color: @GenericRed;
+          &:hover {
+            color: white;
+          }
+        }
+        .sub-menu {
+          left: auto;
+          right: 0;
+          width: 300px;
+        }
+      }
+      .sub-menu {
+        padding: 20px 25px;
+        display: none;
+        position: absolute;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        background: #800002;
+        border-top: 1px solid #a00003;
+        > ul {
+          margin: 0 40px 0 0;
+          padding: 0;
+          float: left;
+          list-style: none;
+          li {
+            padding: 4px 0;
+          }
+        }
       }
       &:hover {
-        color: white;
-        border: none;
-        background-color: @HighlightRed;
-        border-bottom: 2px solid @SteinRed;
-      }
-    }
-    &.nav-find-store {
-      a {
-        color: @GenericRed;
-        &:hover {
+        .sub-menu {
+          display: none;
           color: white;
         }
       }
-      .sub-menu {
-        left: auto;
-        right: 0;
-        width: 300px;
-      }
-    }
-    .sub-menu {
-      padding: 20px 25px;
-      display: none;
-      position: absolute;
-      left: 0;
-      z-index: 1;
-      width: 100%;
-      background: #800002;
-      border-top: 1px solid #a00003;
-      > ul {
-        margin: 0 40px 0 0;
-        padding: 0;
-        float: left;
-        list-style: none;
-        li {
-          padding: 4px 0;
-        }
-      }
-    }
-    &:hover {
-      .sub-menu {
-        display: none;
-        color: white;
-      }
     }
   }
-}
-.nav-small {
-  margin: 10px 15px;
-  display: none;
-  width: 90%;
-  @media (max-width: 768px) {
-    display: block;
+  .nav-small {
+    margin: 10px 15px;
+    display: none;
+    width: 90%;
+    @media (max-width: 768px) {
+      display: inline-block;
+    }
   }
 }
 
