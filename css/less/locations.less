@@ -1,15 +1,17 @@
 .locations {
   margin-top: 15px;
+  h3 {
+    margin: 0 0 10px;
+    font-size: 21px;
+    line-height: 21px;
+  }
   .locations-single {
     padding: 20px 0;
     clear: both;
+    height: 275px;
     border-bottom: 1px solid @LightGrey;
-    .location-info {
-      float: left;
-    }
     .store-hours {
-      float: right;
-      width: 210px;
+      margin: 15px 0 0;
       td {
         padding: 3px 0;
         &.store-hours-time {
@@ -17,24 +19,12 @@
         }
       }
     }
-    h3 {
-      margin: 0;
-      a {
-        color: @ContentGrey;
-      }
-    }
-    .location-type {
-      margin: 3px 0 0;
-      text-transform: uppercase;
-      font-weight: bold;
-      color: @MediumGrey;
-    }
     .location-address,
     .location-directions {
       margin: 10px 0 0;
     }
     .location-phone {
-      margin: 10px 0 0;
+      margin: 5px 0 0;
       font-weight: bold;
     }
     &:after { 
@@ -42,9 +32,6 @@
        display: block;
        height: 0; 
        clear: both;
-    }
-    &:first-of-type {
-      padding: 0 0 20px;
     }
     &:last-of-type {
       border-bottom: none;
@@ -58,6 +45,7 @@
     }
   }
   .locations-more-info {
+    margin: 0 0 40px;
     padding: 25px;
     background: @AccentLight;
   }
