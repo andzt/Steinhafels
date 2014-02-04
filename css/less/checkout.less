@@ -91,99 +91,56 @@
       .checkout-steps-content {
         margin: 10px 0 0;
         display: none;
-        #input-first-name {
-          margin: 0 6px 10px 0;
-          width: 320px;
-          @media (max-width: 1200px) {
-            width: 249px;
+        .mm-yy-slash {
+          @media (max-width: 768px) {
+            display: none;
           }
-          @media (max-width: 991px) {
-            width: 139px;
+        }
+        .input-x-small {
+          margin: 0 4px 10px 0;
+          width: 50px;
+          &:last-of-type {
+            margin: 0 6px 10px 1px;
           }
           @media (max-width: 768px) {
             width: 100%;
           }
         }
-        #input-last-name {
-          margin: 0 0 10px;
-          width: 320px;
+        .input-small {
+          margin: 0 6px 10px 0;
+          width: 154px;
           @media (max-width: 1200px) {
-            width: 249px;
+            width: 124px;
           }
           @media (max-width: 991px) {
             margin: 0 6px 10px 0;
-            width: 139px;
+            width: 171px;
           }
           @media (max-width: 768px) {
             width: 100%;
           }
         }
-        #input-address {
+        .input-medium {
           margin: 0 6px 10px 0;
-          width: 521px;
+          width: 318px;
           @media (max-width: 1200px) {
-            width: 379px;
+            width: 259px;
           }
           @media (max-width: 991px) {
-            width: 212px;
+            width: 352px;
           }
           @media (max-width: 768px) {
             width: 100%;
           }
         }
-        #input-address-2 {
-          margin: 0 0 10px;
-          width: 119px;
-          @media (max-width: 991px) {
-            margin: 0 6px 10px 0;
-            width: 66px;
-          }
-          @media (max-width: 768px) {
-            width: 100%;
-          }
-        }
-        #input-zip {
+        .input-large {
           margin: 0 6px 10px 0;
-          width: 119px;
-          @media (max-width: 991px) {
-            width: 66px;
-          }
-          @media (max-width: 768px) {
-            width: 100%;
-          }
-        }
-        #input-city {
-          margin: 0 6px 10px 0;
-          width: 320px;
+          width: 482px;
           @media (max-width: 1200px) {
-            width: 249px;
+            width: 393px;
           }
           @media (max-width: 991px) {
-            width: 136px;
-          }
-          @media (max-width: 768px) {
-            width: 100%;
-          }
-        }
-        #input-state {
-          margin: 0 0 10px;
-          width: 119px;
-          @media (max-width: 991px) {
-            margin: 0 6px 10px 0;
-            width: 66px;
-          }
-          @media (max-width: 768px) {
-            width: 100%;
-          }
-        }
-        #input-phone {
-          margin: 0 0 10px;
-          width: 320px;
-          @media (max-width: 1200px) {
-            width: 249px;
-          }
-          @media (max-width: 991px) {
-            width: 288px;
+            width: 533px;
           }
           @media (max-width: 768px) {
             width: 100%;
@@ -331,7 +288,7 @@
           }
         }
         .btn {
-          margin: 20px 0 0;
+          margin: 20px 6px 0 0;
           clear: both;
           float: right;
           width: 225px;
@@ -356,6 +313,7 @@
         }
       }
       .billing-address-form {
+        margin: 10px 0 0;
         display: none;
       }
       &.editable {
