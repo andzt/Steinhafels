@@ -247,6 +247,9 @@
 /* ==============================
    PRIMARY NAVIGATION
    ============================== */
+.nav-tabs-wrapper {
+  text-align: center;
+}
 .nav-tabs {
   margin: 0 15px;
   position: relative;
@@ -256,20 +259,21 @@
   }
   > li {
     position: static;
-    float: left;
+    display: inline-block;
+    float: none;
     > a {
       margin: 0;
-      padding: 10px 16.6px;
+      padding: 10px 16px;
       font-weight: bold;
       color: @ContentGrey;
       border: none;
       .rounded(0);
       border-bottom: 2px solid @SteinRed;
       @media (min-width: 1200px) {
-        padding: 10px 26.6px;
+        padding: 10px 26px;
       }
       @media (max-width: 1000px) {
-        padding: 10px 36.6px;
+        padding: 10px 36px;
       }
       &:hover {
         color: white;
