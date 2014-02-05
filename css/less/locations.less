@@ -49,4 +49,24 @@
     padding: 25px;
     background: @AccentLight;
   }
+  &.locations-detail {
+    .locations-single {
+      height: 162px;
+      @media (max-width: 480px) {
+        height: auto;
+      }
+      .location-info {
+        float: left;
+        @media (max-width: 480px) {
+          float: none;
+        }
+      }
+      .store-hours {
+        float: right;
+        @media (max-width: 480px) {
+          float: none;
+        }
+      }
+    }
+  }
 }
