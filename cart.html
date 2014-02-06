@@ -410,61 +410,66 @@
               <button class="btn btn-standard btn-primary" type="button">Checkout</button>
             </div>
             <table width="100%">
-              <tr class="shopping-cart-header">
-                <th>Item:</th>
-                <th class="cart-quantity">Quantity:</th>
-                <th class="cart-price">Price:</th>
-              </tr>
-              <tr class="cart-item">
-                <td class="cart-item-info">
-                  <div class="cart-item-image">
-                    <a href="product.html"><img src="img/item-image.jpg" alt="Parker Leather Sofa" class="item-image"></a>
-                  </div>
-                  <div class="cart-item-details">
-                    <h3><a href="product.html">item title</a></h3>
-                    <p class="cart-item-details-price">$1,234.94</p>
-                    <p>Dimensions: asdlkfjasdf</p>
-                    <p>SKU: askdfadfasdf</p>
-                  </div>
-                </td>
-                <td class="cart-quantity">
-                  <input name="quantity" type="text" value="1"><p>Remove</p>
-                </td>
-                <td class="cart-price">$1,234.94</td>
-              </tr>
-              <tr class="cart-item">
-                <td class="cart-item-info">
-                  <div class="cart-item-image">
-                    <a href="product.html"><img src="img/item-image.jpg" alt="Parker Leather Sofa" class="item-image"></a>
-                  </div>
-                  <div class="cart-item-details">
-                    <h3><a href="product.html">item title</a></h3>
-                    <p class="cart-item-details-price">$1,234.94</p>
-                    <p>Dimensions: asdlkfjasdf</p>
-                    <p>SKU: askdfadfasdf</p>
-                  </div>
-                </td>
-                <td class="cart-quantity">
-                  <input name="quantity" type="text" value="1"><p>Remove</p>
-                </td>
-                <td class="cart-price">$1,234.94</td>
-              </tr>
-
-              <tr class="cart-subtotal">
-                <td></td>
-                <td class="cart-label">Subtotal</td>
-                <td class="cart-price">$1,234.94</td>
-              </tr>
-              <tr class="cart-shipping">
-                <td></td>
-                <td class="cart-label">Shipping</td>
-                <td class="cart-price">N/A</td>
-              </tr>
-              <tr class="cart-total">
-                <td></td>
-                <td class="cart-label">Total</td>
-                <td class="cart-price">$1,234.94</td>
-              </tr>
+              <thead>
+                <tr>
+                  <th class="cart-item-title">Item:</th>
+                  <th class="cart-quantity">Quantity:</th>
+                  <th class="cart-price">Price:</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="cart-item">
+                  <td class="cart-item-info">
+                    <div class="cart-item-image">
+                      <a href="product.html"><img src="img/item-image.jpg" alt="Parker Leather Sofa" class="item-image"></a>
+                    </div>
+                    <div class="cart-item-details">
+                      <h3><a href="product.html">item title</a></h3>
+                      <p class="cart-item-details-price">$1,234.94</p>
+                      <p>Dimensions: asdlkfjasdf</p>
+                      <p>SKU: askdfadfasdf</p>
+                    </div>
+                  </td>
+                  <td class="cart-quantity">
+                    <input name="quantity" type="text" value="1"><p>Remove</p>
+                  </td>
+                  <td class="cart-price">$1,234.94</td>
+                </tr>
+                <tr class="cart-item">
+                  <td class="cart-item-info">
+                    <div class="cart-item-image">
+                      <a href="product.html"><img src="img/item-image.jpg" alt="Parker Leather Sofa" class="item-image"></a>
+                    </div>
+                    <div class="cart-item-details">
+                      <h3><a href="product.html">item title</a></h3>
+                      <p class="cart-item-details-price">$1,234.94</p>
+                      <p>Dimensions: asdlkfjasdf</p>
+                      <p>SKU: askdfadfasdf</p>
+                    </div>
+                  </td>
+                  <td class="cart-quantity">
+                    <input name="quantity" type="text" value="1"><p>Remove</p>
+                  </td>
+                  <td class="cart-price">$1,234.94</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr class="cart-subtotal">
+                  <td></td>
+                  <td class="cart-label">Subtotal</td>
+                  <td class="cart-price">$1,234.94</td>
+                </tr>
+                <tr class="cart-shipping">
+                  <td></td>
+                  <td class="cart-label">Shipping</td>
+                  <td class="cart-price">N/A</td>
+                </tr>
+                <tr class="cart-total">
+                  <td></td>
+                  <td class="cart-label">Total</td>
+                  <td class="cart-price">$1,234.94</td>
+                </tr>
+              </tfoot>
             </table>
             <form class="form-inline" role="form">
               <div class="form-group">

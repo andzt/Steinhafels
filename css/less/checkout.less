@@ -481,7 +481,6 @@
     }
   }
   tr {
-    border-top: 1px solid @LightGrey;
     h3 {
       margin: 0;
     }
@@ -542,7 +541,6 @@
         line-height: 32px;
       }
     }
-    &:first-of-type,
     &.cart-shipping {
       border-top: none;
       td {
@@ -566,6 +564,16 @@
           color: @Green;
         }
       }
+    }
+  }
+  tbody {
+    tr {
+      border-top: 1px solid @LightGrey;
+    }
+  }
+  tfoot {
+    .cart-subtotal, .cart-total {
+      border-top: 1px solid @LightGrey;
     }
   }
 }
